@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  
+  <title>InAmigos Foundation - Empowering Lives, Building Futures</title>
+  <meta name="description" content="InAmigos Foundation is a Section 8 registered NGO driving sustainable social impact in India through child education, women empowerment, food security, animal welfare, and environmental sustainability.">
+  <meta name="keywords" content="InAmigos Foundation, NGO, India, Project Seva, Project Udaan, Child Education, Women Empowerment, Animal Welfare, Social Impact, Chhattisgarh">
+  <meta name="author" content="InAmigos Foundation">
+  
+  <meta property="og:title" content="InAmigos Foundation - Driving Sustainable Social Impact">
+  <meta property="og:description" content="Join us in creating a more inclusive and compassionate society. Supporting education, women's skill development, and community welfare.">
+  <meta property="og:image" content="assets/hero_bg.png">
+  <meta property="og:url" content="https://inamigosfoundation.org.in">
+  <meta property="og:type" content="website">
+
+  <link rel="shortcut icon" href="https://inamigosfoundation.org.in/public/storage/settings/1744214680.jpg" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <script defer src="app.js"></script>
+
+  <style>
+    /* Logo image styling */
+    .logo-img {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-right: 10px;
+      flex-shrink: 0;
+    }
+
+    /* Make the logo anchor flex so image + text align */
+    a.logo {
+      display: flex !important;
+      align-items: center !important;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER & NAVIGATION -->
+  <header class="header-area" id="header">
+    <div class="container">
+      <nav class="navbar" aria-label="Main Navigation">
+        <a href="#" class="logo" id="navLogo">
+          <!-- Logo image added here -->
+          <img 
+            src="https://inamigosfoundation.org.in/public/storage/settings/1744214680.jpg" 
+            alt="InAmigos Foundation Logo" 
+            class="logo-img"
+            onerror="this.style.display='none'"
+          >
+          <span class="logo-green">InAmigos</span><span class="logo-white">Foundation</span>
+        </a>
+        
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#" class="nav-item active">Home</a></li>
+          <li><a href="#about" class="nav-item">About Us</a></li>
+          <li><a href="#projects" class="nav-item">Projects</a></li>
+          <li><a href="#impact" class="nav-item">Our Impact</a></li>
+          <li><a href="#join" class="nav-item">Get Involved</a></li>
+        </ul>
+        
+        <div class="nav-actions">
+          <a href="https://rzp.io/l/kWQ87HP" target="_blank" rel="noopener noreferrer" class="btn btn-primary" id="btnDonateNav">
+            Donate Now <i class="fa-solid fa-heart"></i>
+          </a>
+        </div>
+        
+        <button class="mobile-nav-toggle" id="btnMobileNavToggle" aria-label="Toggle mobile menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO BANNER -->
+    <section class="hero-section" id="hero">
+      <div class="hero-glow"></div>
+      <img src="assets/hero_bg.png" alt="InAmigos Foundation Volunteer Community" class="hero-bg-img" id="heroBgImg">
+      <div class="hero-bg-overlay"></div>
+      
+      <div class="container">
+        <div class="hero-content">
+          <!-- REMOVED: hero-badge (#InAmigos Intern Initiative) -->
+          <h1 id="heroTitle">Nurturing Minds. Empowering Lives. Restoring Nature.</h1>
+          <p id="heroDescription">InAmigos Foundation is a Section 8 registered non-profit organization driving sustainable social impact across India. We believe in the power of collective action to heal, educate, and empower.</p>
+          <div class="hero-btns">
+            <a href="#join" class="btn btn-primary open-volunteer-modal" id="btnHeroVolunteer">
+              Become a Volunteer <i class="fa-solid fa-user-plus"></i>
+            </a>
+            <a href="#projects" class="btn btn-secondary" id="btnHeroExplore">
+              Explore Our Initiatives <i class="fa-solid fa-arrow-down"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT US SECTION -->
+    <section class="section-padding" id="about">
+      <div class="container">
+        <div class="section-header text-center">
+          <h2>Get to Know Us Better</h2>
+          <p>Founded on September 23, 2020, by Mr. Govind Shukla, InAmigos Foundation has built a robust network of volunteers and professionals working towards a happier, healthier society.</p>
+        </div>
+        
+        <div class="about-grid">
+          <div class="about-text">
+            <h3>Who We Are</h3>
+            <p>Licensed by the Central Government and headquartered in Chhattisgarh, our foundation operations maintain high-quality service and standard criteria. We believe that lasting social change starts at the grassroots level by directly empowering communities.</p>
+            <p>Every contribution we receive is directly allocated towards providing critical food support, women's entrepreneurship training, child education, animal rescue operations, and tree planting campaigns across multiple Indian states.</p>
+            
+            <div class="about-credentials">
+              <h4>Trust & Transparency Standards</h4>
+              <div class="credential-chips">
+                <span class="chip" id="chip80g"><i class="fa-solid fa-circle-check"></i> 80G & 12A Certified</span>
+                <span class="chip" id="chipcsr"><i class="fa-solid fa-circle-check"></i> CSR-1 Registered</span>
+                <span class="chip" id="chipiso"><i class="fa-solid fa-circle-check"></i> ISO 9001:2015 Quality</span>
+                <span class="chip" id="chipniti"><i class="fa-solid fa-circle-check"></i> NITI Aayog Registered</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="values-stack">
+            <div class="value-card" id="valueTransparency">
+              <div class="value-icon"><i class="fa-solid fa-eye"></i></div>
+              <div>
+                <h4>Radical Transparency</h4>
+                <p>We ensure all resources and donations directly serve their intended purposes, backed by continuous auditing and reports.</p>
+              </div>
+            </div>
+            
+            <div class="value-card" id="valueCompassion">
+              <div class="value-icon"><i class="fa-solid fa-hand-holding-heart"></i></div>
+              <div>
+                <h4>Compassion in Action</h4>
+                <p>We approach every initiative—from feeding street animals to tutoring children—with profound respect and kindness.</p>
+              </div>
+            </div>
+            
+            <div class="value-card" id="valueCollective">
+              <div class="value-icon"><i class="fa-solid fa-users"></i></div>
+              <div>
+                <h4>Collective Growth</h4>
+                <p>True success comes when we uplift everyone. We foster active youth volunteerism to mold the leaders of tomorrow.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ONGOING PROJECTS SECTION -->
+    <section class="section-padding" id="projects" style="background-color: var(--secondary-dark);">
+      <div class="container">
+        <div class="section-header text-center">
+          <h2>Our Core Initiatives</h2>
+          <p>We drive change through six structured, ongoing projects, each designed to address a critical dimension of societal and environmental welfare.</p>
+        </div>
+        
+        <div class="filter-tabs" id="filterTabs">
+          <button class="filter-btn active" data-filter="all" id="btnFilterAll">All Projects</button>
+          <button class="filter-btn" data-filter="social" id="btnFilterSocial">Social Service</button>
+          <button class="filter-btn" data-filter="education" id="btnFilterEducation">Youth & Education</button>
+          <button class="filter-btn" data-filter="environment" id="btnFilterEnvironment">Nature & Animals</button>
+        </div>
+        
+        <div class="projects-grid" id="projectsGrid">
+          
+          <article class="project-card" data-category="social" id="cardProjectSeva">
+            <div class="project-img-wrapper">
+              <span class="project-badge">Social Service</span>
+              <img src="assets/project_seva.png" alt="Project SEVA - Food Distribution" class="project-img">
+            </div>
+            <div class="project-content">
+              <h3>Project SEVA</h3>
+              <p>Dedicated to alleviating hunger and poverty. Our volunteers distribute nutritious meals and ration kits daily to daily wagers, orphans, and homeless communities who face severe food insecurity.</p>
+              <div class="project-impact">
+                <span class="impact-label"><i class="fa-solid fa-chart-line"></i> Social Impact</span>
+                <span class="impact-desc">Reduces nutritional gaps and provides immediate survival security to marginalized families.</span>
+              </div>
+            </div>
+          </article>
+          
+          <article class="project-card" data-category="education" id="cardProjectVikas">
+            <div class="project-img-wrapper">
+              <span class="project-badge">Skill Development</span>
+              <img src="assets/project_vikas.png" alt="Project VIKAS - Career Mentorship" class="project-img">
+            </div>
+            <div class="project-content">
+              <h3>Project VIKAS</h3>
+              <p>A specialized skill & career development program offering internships, practical work experience, and corporate mentorship to students and young graduates to enhance their national employability.</p>
+              <div class="project-impact">
+                <span class="impact-label"><i class="fa-solid fa-chart-line"></i> Social Impact</span>
+                <span class="impact-desc">Prepares local youth for successful entries into competitive technology, social, and finance sectors.</span>
+              </div>
+            </div>
+          </article>
+          
+          <article class="project-card" data-category="social" id="cardProjectUdaan">
+            <div class="project-img-wrapper">
+              <span class="project-badge">Women Empowerment</span>
+              <img src="assets/project_udaan.png" alt="Project UDAAN - Women Skills training" class="project-img">
+            </div>
+            <div class="project-content">
+              <h3>Project UDAAN</h3>
+              <p>Uplifting women in rural and sub-urban spaces by training them in financial literacy, sewing, tailoring, handicraft creation, and entrepreneurship to secure independent livelihoods.</p>
+              <div class="project-impact">
+                <span class="impact-label"><i class="fa-solid fa-chart-line"></i> Social Impact</span>
+                <span class="impact-desc">Fosters financial independence, breaking generational poverty cycles and boosting household stability.</span>
+              </div>
+            </div>
+          </article>
+          
+          <article class="project-card" data-category="education" id="cardProjectBachpanshala">
+            <div class="project-img-wrapper">
+              <span class="project-badge">Child Education</span>
+              <img src="assets/project_bachpanshala.png" alt="Project BACHPANSHALA - Tutoring kids" class="project-img">
+            </div>
+            <div class="project-content">
+              <h3>Project BACHPANSHALA</h3>
+              <p>Ensuring quality education for underprivileged children. We bridge literacy gaps by conducting free teaching camps, supplying school essentials, and establishing basic computer courses.</p>
+              <div class="project-impact">
+                <span class="impact-label"><i class="fa-solid fa-chart-line"></i> Social Impact</span>
+                <span class="impact-desc">Sparks a passion for learning, reducing child labor rates and dropout statistics in vulnerable areas.</span>
+              </div>
+            </div>
+          </article>
+          
+          <article class="project-card" data-category="environment" id="cardProjectJeev">
+            <div class="project-img-wrapper">
+              <span class="project-badge">Animal Welfare</span>
+              <img src="assets/project_jeev.png" alt="Project JEEV - Street animal care" class="project-img">
+            </div>
+            <div class="project-content">
+              <h3>Project JEEV</h3>
+              <p>Compassionate care for street animals (dogs, cows, cats). Our teams provide regular feeding, establish makeshift shelters for weather protection, and coordinate local rescue operations.</p>
+              <div class="project-impact">
+                <span class="impact-label"><i class="fa-solid fa-chart-line"></i> Social Impact</span>
+                <span class="impact-desc">Fosters a community culture of empathy, reducing stray neglect and human-animal conflicts.</span>
+              </div>
+            </div>
+          </article>
+          
+          <article class="project-card" data-category="environment" id="cardProjectPrakriti">
+            <div class="project-img-wrapper">
+              <span class="project-badge">Environment</span>
+              <img src="assets/project_prakriti.png" alt="Project PRAKRITI - Tree planting" class="project-img">
+            </div>
+            <div class="project-content">
+              <h3>Project PRAKRITI</h3>
+              <p>Focused on environmental conservation. We conduct extensive tree-planting drives, organize waste cleanup campaigns, and educate schools on sustainable zero-waste lifestyle practices.</p>
+              <div class="project-impact">
+                <span class="impact-label"><i class="fa-solid fa-chart-line"></i> Social Impact</span>
+                <span class="impact-desc">Combats local air pollution, builds green covers, and embeds ecological mindfulness in youths.</span>
+              </div>
+            </div>
+          </article>
+          
+        </div>
+      </div>
+    </section>
+
+    <!-- IMPACT STATISTICS SECTION -->
+    <section class="section-padding impact-section" id="impact">
+      <div class="container">
+        <div class="section-header text-center">
+          <h2>Our Impact In Numbers</h2>
+          <p>Behind every statistic is a human story, a clean street, a healthy pet, and a community taking a giant step forward.</p>
+        </div>
+        
+        <div class="impact-grid" id="impactGrid">
+          <div class="counter-box" id="boxBeneficiaries">
+            <div class="counter-icon"><i class="fa-solid fa-users-line"></i></div>
+            <div class="counter-number" data-target="50000" data-suffix="+">0</div>
+            <div class="counter-label">Beneficiaries Reached</div>
+          </div>
+          
+          <div class="counter-box" id="boxVolunteers">
+            <div class="counter-icon"><i class="fa-solid fa-hands-holding-child"></i></div>
+            <div class="counter-number" data-target="200" data-suffix="+">0</div>
+            <div class="counter-label">Active Volunteers</div>
+          </div>
+          
+          <div class="counter-box" id="boxStates">
+            <div class="counter-icon"><i class="fa-solid fa-map-location-dot"></i></div>
+            <div class="counter-number" data-target="28" data-suffix="">0</div>
+            <div class="counter-label">Indian States Touched</div>
+          </div>
+          
+          <div class="counter-box" id="boxTrees">
+            <div class="counter-icon"><i class="fa-solid fa-seedling"></i></div>
+            <div class="counter-number" data-target="20000" data-suffix="+">0</div>
+            <div class="counter-label">Trees Planted</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CALL TO ACTION (GET INVOLVED) -->
+    <section class="section-padding" id="join">
+      <div class="container">
+        <div class="section-header text-center">
+          <h2>How You Can Support Us</h2>
+          <p>Be the change you wish to see. Whether you contribute your valuable time or your financial resources, you hold the power to change lives.</p>
+        </div>
+        
+        <div class="cta-grid">
+          <div class="cta-card cta-card-volunteer" id="cardVolunteerCta">
+            <div>
+              <div class="cta-icon"><i class="fa-solid fa-handshake-angle"></i></div>
+              <h3>Become A Volunteer</h3>
+              <p>Join our family of 200+ active change agents across India. Contribute your skills, mentor students, distribute meals, or help local animals. Stand out, build leadership skills, and drive real social change.</p>
+            </div>
+            <button class="btn btn-primary open-volunteer-modal" id="btnOpenVolunteerForm">
+              Apply to Volunteer <i class="fa-solid fa-angles-right"></i>
+            </button>
+          </div>
+          
+          <div class="cta-card cta-card-donate" id="cardDonateCta">
+            <div>
+              <div class="cta-icon"><i class="fa-solid fa-hand-holding-dollar"></i></div>
+              <h3>Support Our Mission</h3>
+              <p>Your financial contributions help us expand educational materials, build shelters, buy food, and buy planting saplings. InAmigos Foundation ensures full compliance, transparency, and accountability.</p>
+              
+              <div class="donation-details" id="donationDetailsBlock">
+                <p><strong>Bank Details for Direct Transfers:</strong></p>
+                <p>Bank Name: State Bank of India</p>
+                <p>Account Name: InAmigos Foundation</p>
+                <p>Account Type: Current Account</p>
+                <p>Tax Benefit: eligible for **80G & 12A** tax-exemption.</p>
+              </div>
+            </div>
+            <a href="https://rzp.io/l/kWQ87HP" target="_blank" rel="noopener noreferrer" class="btn btn-outline" style="border-color: var(--accent); color: var(--accent);" id="btnDonateExternal">
+              Donate via Razorpay <i class="fa-solid fa-heart-pulse"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- VOLUNTEER REGISTRATION MODAL -->
+  <div class="modal-overlay" id="volunteerModal" aria-hidden="true" role="dialog">
+    <div class="modal-container">
+      <div class="modal-header">
+        <h3>Join as a Volunteer</h3>
+        <button class="modal-close-btn" aria-label="Close modal"><i class="fa-solid fa-xmark"></i></button>
+      </div>
+      <div class="modal-body">
+        <div class="form-alert" id="formAlert"></div>
+        <form id="volunteerForm" novalidate>
+          <div class="form-group">
+            <label for="volName" class="form-label">Full Name</label>
+            <input type="text" id="volName" class="form-control" placeholder="Enter your full name" required>
+          </div>
+          <div class="form-group">
+            <label for="volEmail" class="form-label">Email Address</label>
+            <input type="email" id="volEmail" class="form-control" placeholder="Enter your email address" required>
+          </div>
+          <div class="form-group">
+            <label for="volPhone" class="form-label">Mobile Number</label>
+            <input type="tel" id="volPhone" class="form-control" placeholder="Enter your 10-digit mobile number" required>
+          </div>
+          <div class="form-group">
+            <label for="volProject" class="form-label">Select Project of Interest</label>
+            <select id="volProject" class="form-control" required>
+              <option value="" disabled selected>Choose a project...</option>
+              <option value="Project SEVA">Project SEVA (Social Service & Food)</option>
+              <option value="Project VIKAS">Project VIKAS (Skill & Career Development)</option>
+              <option value="Project UDAAN">Project UDAAN (Women Empowerment)</option>
+              <option value="Project BACHPANSHALA">Project BACHPANSHALA (Child Education)</option>
+              <option value="Project JEEV">Project JEEV (Animal Welfare)</option>
+              <option value="Project PRAKRITI">Project PRAKRITI (Environmental Sustainability)</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="volMessage" class="form-label">Briefly tell us why you'd like to join (Optional)</label>
+            <textarea id="volMessage" class="form-control" placeholder="Tell us about your interest or skills..."></textarea>
+          </div>
+          
+          <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 10px;">
+            Submit Application <i class="fa-solid fa-paper-plane"></i>
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer-area">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col about" id="footerColAbout">
+          <a href="#" class="logo" style="margin-bottom: 20px;">
+            <img 
+              src="https://inamigosfoundation.org.in/public/storage/settings/1744214680.jpg" 
+              alt="InAmigos Foundation Logo" 
+              class="logo-img"
+              onerror="this.style.display='none'"
+            >
+            <span class="logo-green">InAmigos</span><span class="logo-white">Foundation</span>
+          </a>
+          <p>A Section 8 registered non-profit organization dedicated to fostering social inclusion, education, and environmental restoration across India.</p>
+          <div class="social-links">
+            <a href="https://www.facebook.com/inamigos.inamigos" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/inamigos/" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/company/inamigos-foundation/" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          </div>
+        </div>
+        
+        <div class="footer-col" id="footerColLinks">
+          <h4>Useful Links</h4>
+          <ul class="footer-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#impact">Our Impact</a></li>
+            <li><a href="#join">Get Involved</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-col" id="footerColProjects">
+          <h4>Our Initiatives</h4>
+          <ul class="footer-links">
+            <li><a href="#projects">Project SEVA</a></li>
+            <li><a href="#projects">Project VIKAS</a></li>
+            <li><a href="#projects">Project UDAAN</a></li>
+            <li><a href="#projects">Project BACHPANSHALA</a></li>
+            <li><a href="#projects">Project JEEV</a></li>
+            <li><a href="#projects">Project PRAKRITI</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-col" id="footerColContact">
+          <h4>Contact Us</h4>
+          <ul class="contact-list">
+            <li class="contact-item">
+              <i class="fa-solid fa-location-dot"></i>
+              <span>Ward No. 5, Gram Post,<br>Sipat Ujwal Nagar,<br>Bilaspur, Chhattisgarh, 495555</span>
+            </li>
+            <li class="contact-item">
+              <i class="fa-solid fa-envelope"></i>
+              <a href="mailto:support@inamigosfoundation.org.in">support@inamigosfoundation.org.in</a>
+            </li>
+            <li class="contact-item">
+              <i class="fa-solid fa-phone"></i>
+              <a href="tel:+916267309902">+91 626 730 9902</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="copyright-area">
+        <div class="copyright-flex">
+          <p>© <span id="copyrightYear">2026</span> InAmigos Foundation. All Rights Reserved.</p>
+          <p>Driving Social Impact Across India</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('copyrightYear').textContent = new Date().getFullYear();
+
+    // --- Scroll Spy: highlight the correct nav item based on scroll position ---
+    (function () {
+      // Map each nav link to its target section id
+      const navItems = document.querySelectorAll('.nav-links .nav-item');
+      const sections = [
+        { id: 'hero',    link: document.querySelector('.nav-links a[href="#"]') },
+        { id: 'about',   link: document.querySelector('.nav-links a[href="#about"]') },
+        { id: 'projects',link: document.querySelector('.nav-links a[href="#projects"]') },
+        { id: 'impact',  link: document.querySelector('.nav-links a[href="#impact"]') },
+        { id: 'join',    link: document.querySelector('.nav-links a[href="#join"]') },
+      ];
+
+      function setActive(activeLink) {
+        navItems.forEach(item => item.classList.remove('active'));
+        if (activeLink) activeLink.classList.add('active');
+      }
+
+      function onScroll() {
+        const scrollY = window.scrollY + 80; // 80px offset for fixed header height
+
+        // Walk sections in reverse to find which one we're currently in
+        let current = sections[0]; // default to Home
+        for (let i = 0; i < sections.length; i++) {
+          const el = document.getElementById(sections[i].id);
+          if (el && el.offsetTop <= scrollY) {
+            current = sections[i];
+          }
+        }
+        setActive(current.link);
+      }
+
+      window.addEventListener('scroll', onScroll, { passive: true });
+      onScroll(); // run once on load
+    })();
+  </script>
+</body>
+</html>
